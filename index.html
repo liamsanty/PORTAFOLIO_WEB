@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.
-    css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <title>Portafolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -21,15 +18,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skill">SKILL</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills"onclick="seleccionar()">SKILL</a></li>
+                    <li><a href="#curriculum"onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio"onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-resposive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -37,9 +34,9 @@
 
     <!-- SECCIONDE INCIO -->
     <section id="inicio" class="inicio">
-        <div class="contenedor-banner">
+        <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
+                <img src="img/juan.png" alt="">
             </div>
             <h1>LIAM SANTY</h1>
             <h2>Tecnologo en Sistemas-Consultor jr</h2>
@@ -57,7 +54,7 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Liam-santy.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <p><span>Hola, soy Liam-santy</span> consultor de tecnoligia con experiencia en la implementacion de soluccines tecnologicas en el ambito de proyectos empresarales. Actualmente, colaboro en una empresa en la implemtentacion de herramientas tecnologicas como SIAGRI, enfocada en la gestion agroindustrial y SIFROTA, diseñada para el mantenimiento de equipos. Mi rol tambien incluye interactuar con clientes, realizar levantamientos de procesos y coordinar tareas dentro del area de proyectos para asegurar el exito de cada implementacion.</p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -132,6 +129,11 @@
                 </div>
             </div>
             <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
 
                 <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
@@ -142,10 +144,10 @@
                 <div class="col">
                     <h3>Tecnicas Skills</h3>
                     <div class="skill">
-                        <span>Java</span>
+                        <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>75%</span>
+                                <span>40%</span>
                             </div>
                         </div>
                     </div>
@@ -174,7 +176,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Drupa</span>
+                        <span>Drupal</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>40%</span>
@@ -190,7 +192,7 @@
                         <span>Comunicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>80%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -206,7 +208,7 @@
                         <span>Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>60%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -214,7 +216,7 @@
                         <span>Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>65%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -230,6 +232,132 @@
             </div>
         </div>
     </section>
+
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Tecnologia en sistemas de la informacion</h4>
+                    <span class="casa">Universidad Antonio Jose Camacho</span>
+                    <span class="fecha">2022 - 2024</span>
+                    <p>Mi formación como Tecnologo en Sistemas de informacion me ha brindado una base sólida en desarrollo de software, administración de sistemas y bases de datos. Actualmente, estoy en un proceso continuo de aprendizaje, donde cada proyecto y experiencia me permite mejorar y desarrollar nuevas habilidades. A lo largo de mi carrera universitaria, los proyectos que he creado han sido fundamentales para afianzar mis conocimientos y enfrentar desafíos reales. Este enfoque de crecimiento me ha llevado a trabajar en nuevos desafíos, como el desarrollo de una aplicación de sistema de ventas, que complementa mi formación y me permite seguir expandiendo mi experiencia y conocimientos técnicos.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                <div class="item der">
+                    <h4>Consutlor Tecnologico</h4>
+                    <span class="casa">Mobil-agro</span>
+                    <span class="fecha">2022 - Actualidad</span>
+                    <p>Como consultor en Biosalc desde 2023, he sido responsable de implementar soluciones tecnológicas avanzadas en diversas organizaciones de Centroamérica. Mi trabajo ha consistido en la implementación remota de herramientas clave para optimizar procesos operativos, como las aplicaciones SIAGRI, SIFROTA y SIMAN, que han tenido un impacto significativo en la gestión de recursos y operaciones en las empresas de diferentes países de la región.</p>
+                    <p>Además de la implementación técnica, he trabajado de cerca con equipos locales para garantizar una integración exitosa de estas herramientas en los entornos de trabajo de cada país, brindando soporte y capacitación a los usuarios finales para asegurar el correcto uso y aprovechamiento de las aplicaciones</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO PROYECTOS IMPLEMENTADOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/images1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/images.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/casur_cover.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            
+    </section>
+
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <input type="text" placeholder="Tú Nombre">
+                <input type="text" placeholder="Número telefónico">
+                <input type="text" placeholder="Dirección de correo">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+            <!-- Mapa -->
+            <div class="col">
+                <img src="img/ubicacion.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            valle del cauca, cali - cra 52A 
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Llamanos: 316-888-8888  
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: cw@example.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
     </body>
 </html>
 
